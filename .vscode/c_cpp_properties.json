@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "mac",
+            "includePath": ["${workspaceFolder}/**"],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "intelliSenseMode": "macos-clang-x64",
+            //编译路径，使用它来推断c++标准库头文件路径
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++11"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,27 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+
+    //debuger setting
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "clang++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            //要debug的文件，表示当前active文件
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            //debug时停在main方法上
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            //需要和tasks.json中的label匹配
+            "preLaunchTask": "clang++ build active file",
+            "coreDumpPath": "${fileDirname}/"
+        }
+    ]
+}
