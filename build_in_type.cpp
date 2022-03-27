@@ -1,5 +1,6 @@
 #include <iostream> //引入标准io头文件
 #include "Demo_header.h" //引入自定义header
+#include <string>
 
 //下面的const说明
 //const不管声明还是定义都使用extern
